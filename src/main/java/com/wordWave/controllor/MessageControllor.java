@@ -18,12 +18,6 @@ public class MessageControllor {
 			@Payload Message message
 	) {
 
-		try {
-			Thread.sleep(2000);
-		}catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
 		return message;
 	}
 	@MessageMapping("/message.addUser")
